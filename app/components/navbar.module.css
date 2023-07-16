@@ -1,0 +1,32 @@
+.navcontainer {
+  display: flex;
+  margin-top: 2.5%;
+  background-color: rgba(241, 241, 241, 0.534);
+  flex-direction: row;
+  border-radius: 40px;
+  border: 0px solid black;
+}
+.navcontainer:hover {
+  background-color: rgba(241, 241, 241, 0.767);
+}
+.navcontainer a {
+  text-decoration: none;
+}
+
+.navleft {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  align-items: flex-start;
+  gap: 5%;
+  padding-left: 2.5%;
+}
+
+.navright {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 2.5%;
+  justify-content: flex-end;
+}
