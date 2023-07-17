@@ -1,20 +1,23 @@
 import styles from "./Card.module.css";
 import Image from "next/image";
 import shoppingCart from "../../public/shoppingcart.png";
-import things from "@/public/database";
+import graphicsCards from "@/public/database";
 
 export default function Card() {
-  const myThings = things.map((thing) => {
+  const graphicCardsList = graphicsCards.map((graphicsCards) => {
     return (
       <>
-        <div className={styles.cardcontainer} key={thing.id}>
-          <div className={styles.cardimage}></div>
+        <div className={styles.cardcontainer} key={graphicsCards.id}>
+          <div className={styles.cardimage}>
+            <Image src="" width={250} height={200}></Image>
+          </div>
           <div className={styles.cardtitle}>
             <p>
-              {thing.title} | {thing.price}
+              {graphicsCards.manufacturer} {graphicsCards.graphicsCardName} |{" "}
             </p>
           </div>
           <div className={styles.cardtools}>
+            <p className="styles.price">{graphicsCards.price}</p>
             <Image
               className={styles.cardtools_shoppingcart}
               src={shoppingCart}
@@ -25,5 +28,5 @@ export default function Card() {
     );
   });
 
-  return <div className={styles.maincontainer}>{myThings}</div>;
+  return <div className={styles.maincontainer}>{graphicCardsList}</div>;
 }

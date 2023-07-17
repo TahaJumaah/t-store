@@ -1,11 +1,12 @@
+import "./graphicscardsfolder/7900XT.jpg";
+
 let graphicsCards = [
   {
     id: 1,
     manufacturer: "nVidia",
     graphicsCardName: "GeForce RTX 4090",
     price: 1590,
-    imagesrc:
-      "https://cdn.mos.cms.futurecdn.net/CZQFnhbbAoGtKKewwZeTqT-970-80.jpg.webp",
+    imagesrc: "./graphicscardsfolder/4090.webp",
   },
   {
     id: 2,
@@ -79,3 +80,5 @@ let graphicsCards = [
       "https://cdn.bscom.cz/images/0/262d1e3bc4e0061a/2/msi-radeon-rx-6650-xt-gaming-x-8g.jpg",
   },
 ];
+
+export default graphicsCards;
