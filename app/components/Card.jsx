@@ -10,7 +10,9 @@ export default function Card() {
         <div className={styles.cardcontainer}>
           <div className={styles.cardimage}></div>
           <div className={styles.cardtitle}>
-            <p>{thing.title}</p>
+            <p>
+              {thing.title} | {thing.price}
+            </p>
           </div>
           <div className={styles.cardtools}>
             <Image
