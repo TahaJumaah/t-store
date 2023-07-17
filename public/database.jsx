@@ -11,6 +11,12 @@ let things = [
     price: 195,
     imagesrc: "",
   },
+  {
+    id: 3,
+    title: "Intel",
+    price: 300,
+    imagesrc: "",
+  },
 ];
 
 export default things;
