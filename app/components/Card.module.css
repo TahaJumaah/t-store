@@ -1,3 +1,10 @@
+.maincontainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5%;
+  height: 400px;
+  width: 100%;
+}
 .cardcontainer {
   /* background-color: red; */
   display: flex;
