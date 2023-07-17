@@ -7,7 +7,7 @@ export default function Card() {
   const myThings = things.map((thing) => {
     return (
       <>
-        <div className={styles.cardcontainer}>
+        <div className={styles.cardcontainer} key={thing.id}>
           <div className={styles.cardimage}></div>
           <div className={styles.cardtitle}>
             <p>
