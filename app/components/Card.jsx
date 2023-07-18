@@ -5,6 +5,7 @@ import graphicsCards from "@/public/database";
 
 export default function Card() {
   const graphicCardsList = graphicsCards.map((graphicsCards) => {
+    console.log("this is working");
     return (
       <>
         <div className={styles.cardcontainer} key={graphicsCards.id}>
