@@ -1,8 +1,10 @@
+import HomeBillboard from "./components/HomeBillboard";
 import Card from "./components/Card";
 export default function Home() {
   return (
     <>
-      <h1>This is still home no matter what</h1>
+      <HomeBillboard></HomeBillboard>
+
       <Card></Card>
     </>
   );

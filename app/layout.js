@@ -1,5 +1,5 @@
 import NavBar from "./components/navbar";
-
+import styles from "./layout.module.css";
 export const metadata = {
   title: "TStore",
   description: "Welcome to the TStore",
@@ -8,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
         <NavBar></NavBar>
         {children}
       </body>

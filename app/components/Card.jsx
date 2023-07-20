@@ -5,12 +5,17 @@ import graphicsCards from "@/public/database";
 
 export default function Card() {
   const graphicCardsList = graphicsCards.map((graphicsCards) => {
-    console.log("this is working");
+    // console.log("this is working");
     return (
       <>
         <div className={styles.cardcontainer} key={graphicsCards.id}>
           <div className={styles.cardimage}>
-            <Image src="" width={250} height={200}></Image>
+            <Image
+              src={graphicsCards.imagesrc}
+              width={250}
+              height={200}
+              alt="Graphics Card Image"
+            ></Image>
           </div>
           <div className={styles.cardtitle}>
             <p>
