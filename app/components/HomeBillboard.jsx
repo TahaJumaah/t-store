@@ -2,7 +2,14 @@ import Image from "next/image";
 import styles from "./HomeBillboard.module.css";
 
 export default function HomeBillboard() {
-  return <div className={styles.billboardcontainer}>Is this Real</div>;
+  return (
+    <>
+      <div className={styles.billboardcontainer}></div>
+      <div className={styles.billboardcontainer2}>
+        <p>Second One</p>
+      </div>
+    </>
+  );
 }
 
 //   {/* <Image

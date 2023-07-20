@@ -8,7 +8,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+      <body
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "10px",
+          height: "100vh",
+          width: "100vw",
+        }}
+      >
         <NavBar></NavBar>
         {children}
       </body>

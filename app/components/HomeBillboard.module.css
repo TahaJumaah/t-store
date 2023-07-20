@@ -3,4 +3,11 @@
   background-color: red;
   height: 50%;
   width: 100%;
+  border: 1px solid black;
+}
+
+.billboardcontainer2 {
+  height: 25%;
+  background-color: aliceblue;
+  overflow: hidden;
 }

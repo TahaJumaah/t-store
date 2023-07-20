@@ -14,7 +14,7 @@ export default function Card() {
               src={graphicsCards.imagesrc}
               width={250}
               height={200}
-              alt="Graphics Card Image"
+              alt={graphicsCards.manufacturer}
             ></Image>
           </div>
           <div className={styles.cardtitle}>

@@ -3,9 +3,8 @@ import Card from "./components/Card";
 export default function Home() {
   return (
     <>
-      <HomeBillboard></HomeBillboard>
-
       <Card></Card>
+      <HomeBillboard></HomeBillboard>
     </>
   );
 }
