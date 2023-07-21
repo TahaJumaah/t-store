@@ -13,8 +13,8 @@ export default function RootLayout({ children }) {
           display: "flex",
           flexDirection: "column",
           gap: "10px",
-          height: "100vh",
-          width: "100vw",
+          // height: "98vh",
+          width: "98vw",
         }}
       >
         <NavBar></NavBar>

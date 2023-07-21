@@ -14,12 +14,12 @@ export default function Card() {
               src={graphicsCards.imagesrc}
               width={250}
               height={200}
-              alt={graphicsCards.manufacturer}
+              alt="Graphics Card Image"
             ></Image>
           </div>
           <div className={styles.cardtitle}>
             <p>
-              {graphicsCards.manufacturer} {graphicsCards.graphicsCardName} |{" "}
+              {graphicsCards.manufacturer} {graphicsCards.graphicsCardName}
             </p>
           </div>
           <div className={styles.cardtools}>
@@ -27,6 +27,9 @@ export default function Card() {
             <Image
               className={styles.cardtools_shoppingcart}
               src={shoppingCart}
+              alt="Shopping Cart Icon"
+              width={50}
+              height={50}
             ></Image>
           </div>
         </div>

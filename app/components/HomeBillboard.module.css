@@ -1,13 +1,14 @@
 .billboardcontainer {
   display: flex;
-  background-color: red;
-  height: 50%;
-  width: 100%;
-  border: 1px solid black;
+  /* height: 80%; */
+  width: 45%;
+  justify-self: center;
+  align-self: center;
 }
 
-.billboardcontainer2 {
-  height: 25%;
-  background-color: aliceblue;
-  overflow: hidden;
+.btn {
+  height: 30px;
+  width: auto;
+  align-self: center;
+  justify-self: center;
 }
