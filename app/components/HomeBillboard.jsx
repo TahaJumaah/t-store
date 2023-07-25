@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 import styles from "./HomeBillboard.module.css";
 import graphicsCards from "@/public/database";
 import HomeBillboardBtn from "./HomeBillboardBtn";
@@ -13,21 +14,21 @@ export default function HomeBillboard() {
         <HomeBillboardBtn
           currentSlide={currentSlide}
           setCurrentSlide={setCurrentSlide}
-          direction="Next"
+          direction="Previous"
         ></HomeBillboardBtn>
-        <Image
-          src={graphicsCards[currentSlide].imagesrc}
-          width={0}
-          height={0}
-          sizes="100vw"
-          style={{ width: "100%", height: "100%" }}
-          alt="Graphics Card Image"
-        ></Image>
+        <div className={styles.imagecontainer}>
+          <Image
+            src={graphicsCards[currentSlide].imagesrc}
+            alt="Graphics Card Image"
+            height={600}
+            width={1000}
+          ></Image>
+        </div>
 
         <HomeBillboardBtn
           currentSlide={currentSlide}
           setCurrentSlide={setCurrentSlide}
-          direction="Previous"
+          direction="Next"
         ></HomeBillboardBtn>
       </div>
     </>

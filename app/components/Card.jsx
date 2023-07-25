@@ -23,14 +23,15 @@ export default function Card() {
             </p>
           </div>
           <div className={styles.cardtools}>
-            <p className="styles.price">{graphicsCards.price}</p>
-            <Image
-              className={styles.cardtools_shoppingcart}
-              src={shoppingCart}
-              alt="Shopping Cart Icon"
-              width={50}
-              height={50}
-            ></Image>
+            <p className="styles.price">$ {graphicsCards.price}</p>
+            <div className={styles.cardtools_shoppingcart}>
+              <Image
+                src={shoppingCart}
+                alt="Shopping Cart Icon"
+                width={40}
+                height={40}
+              ></Image>
+            </div>
           </div>
         </div>
       </>

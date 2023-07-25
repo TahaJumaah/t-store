@@ -17,8 +17,10 @@ export default function HomeBillboardBtn({
   }
 
   return (
-    <button onClick={handleClick} className={styles.btn}>
-      {direction}
-    </button>
+    <div className={styles.btncontainer}>
+      <button onClick={handleClick} className={styles.btn}>
+        {direction}
+      </button>
+    </div>
   );
 }

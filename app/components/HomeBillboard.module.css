@@ -1,14 +1,36 @@
 .billboardcontainer {
   display: flex;
-  /* height: 80%; */
-  width: 45%;
-  justify-self: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   align-self: center;
+  height: 50%;
+  width: 100%;
+  position: relative;
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 
+.btncontainer {
+  justify-self: flex-end;
+}
 .btn {
-  height: 30px;
-  width: auto;
-  align-self: center;
-  justify-self: center;
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border: none;
+  padding: 0 56px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 7px;
+  font-weight: 400;
+  font-size: 16px;
+  background: #fff;
+  color: #696969;
+  box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+.btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
 }
